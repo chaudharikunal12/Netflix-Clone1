@@ -76,7 +76,7 @@ function fetchAndbuildMovieSection(fetchUrl, categoryName){
         // console.table(res.results);
         const movies = res.results;
         if (Array.isArray(movies) && movies.length) {
-            buildMoviesSection(movies.slice(0,6), categoryName);
+            buildMoviesSection(movies, categoryName);
         }
         return movies;
     })
